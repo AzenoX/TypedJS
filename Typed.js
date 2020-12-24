@@ -9,7 +9,7 @@ class Typed{
 
     #isWriting;
 
-    constructor(el, options) {
+    constructor(el, options = {}) {
         this.el = el;
         this.#timeline = [];
 
@@ -18,7 +18,7 @@ class Typed{
         this.#blink = ('blink' in options) ? options.blink : true;
 
         //Print Errors - default: false
-        this.#printErrors = ('printErrors' in options) ? options.printErrors : (process.env.NODE_ENV === "development");
+        this.#printErrors = ('printErrors' in options) ? options.printErrors : false;
 
         //Blink Classes - default: []
         this.#blinkClasses = ('blinkClasses' in options) ? options.blinkClasses : [];
@@ -120,7 +120,7 @@ class Typed{
     * length: Integer
     * delay: Integer (milliseconds)
     * */
-    #_delete(el, length, delay = 50){
+    #_delete(el, length, delay){
         return new Promise((resolve) => {
             let counter = 0;
             let interval = setInterval(() => {
