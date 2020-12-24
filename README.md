@@ -2,7 +2,7 @@
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](http://azenox.fr/)
 
-Typed.js - Typewriting Javascript Librairy
+Typed.js - Typewriting Javascript Library
 
 ## Getting Started
 
