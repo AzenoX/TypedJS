@@ -6,6 +6,7 @@ Typed.js - Typewriting Javascript Librairy
 
 ## Getting Started
 
+Demo: [https://azenox.fr/demo/typed.html](https://azenox.fr/demo/typed.html) 
 
 ### Install
 
