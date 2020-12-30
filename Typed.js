@@ -97,7 +97,7 @@ class Typed{
 
     }
     type(str, style = {}, delay = 100){
-        this.#timeline.push("w^" + str + "/" + JSON.stringify(style) + "/" + delay);
+        this.#timeline.push("w^" + str + "///" + JSON.stringify(style) + "///" + delay);
 
         return this;
     }
@@ -164,7 +164,7 @@ class Typed{
 
                         //Write
                         if(action === "w"){
-                            const values = value.split('/');
+                            const values = value.split('///');
                             const str = values[0];
                             const style = JSON.parse(values[1]);
                             const delay = values[2];
@@ -208,5 +208,4 @@ class Typed{
         }
     }
 
-    
 }
