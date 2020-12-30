@@ -2,10 +2,11 @@
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](http://azenox.fr/)
 
-Typed.js - Typewriting Javascript Librairy
+Typed.js - Typewriting Javascript Library
 
 ## Getting Started
 
+Demo: [https://azenox.fr/demo/typed.html](https://azenox.fr/demo/typed.html) 
 
 ### Install
 
@@ -123,7 +124,7 @@ Here is a basic usage:
 	</tbody>
 </table>
 
-
+  
 Here is an advanced usage you can do with all methods:
 ```javascript
     new Typed(element, {
@@ -132,15 +133,17 @@ Here is an advanced usage you can do with all methods:
         blinkClasses: ["blinker"],
         blinkSpeed: 600
     })
-        .type("Hello World !", {color:"#3f51b5"})
-        .pause(2000)
-        .delete(7)
-        .pause(1000)
-        .type(" My Friend !", {color: "#ff9800"})
-        .run();
+	.type("Hello World !", {color:"#3f51b5"})
+	.pause(2000)
+	.delete(12)
+	.pause(1000)
+	.type("How are ", {color: "#ff9800"})
+	.type("you", {color: "#F44336"})
+	.type("?", {color: "#ff9800"})
+	.run();
 ```
 
-By the way, as you may saw, you can chain all methods.
+By the way, as you seen, you can chain all methods.
 
 
 ## Versions
